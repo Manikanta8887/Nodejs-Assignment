@@ -10,6 +10,7 @@ exports.controller = async (req, res) => {
 }
 
 exports.controller1 = async (req, res) => {
+    const body = req.body
     let data = await model.register(req,res)
     if(data.length>0){
         res.send(data)
